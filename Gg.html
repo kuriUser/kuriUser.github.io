@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>www</title>
+    <link rel="stylesheet" type="text/css" href="z.css">
+    <style type="text/css" media="all">
+    .tr{
+      scroll-margin-left: 2.5%;
+    }
+      h1 {
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+      }
+    .id1,.id2{
+      font-size: 1px;
+      margin-top: 2.5%;
+      display: inline;
+    }
+    .id2 {
+      margin-bottom: 2.5%;
+    }
+    .id4 {
+     margin-bottom: 2.5%;
+    }
+    .id{
+      margin-top: 2.5%;
+      background-color: white;
+      margin-bottom: 7.5%;
+    }
+    .me,.me1{
+      font-size: 1px;
+      display: inline;
+    }
+    .b {
+      margin-bottom: 10%;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">SANDI MORSE </h1>
+    <form align="center" class="id">
+    <p class="id4">
+      Masukkan teks : <input type="text" id="text" class="id1">
+      <button onclick="submitdata()" class="id2">morse</button>
+    </p>
+  </form>
+  <form align="center" class="b">
+    <p class="me3">
+      Massukkan morse : <input type="text" id="me" class="me">
+      <button onclick="submitdata2()"class="me1">rubah</button>
+     </p>
+  </form>
+  <p class="tr">Anda telah membuka situs ini,berarti anda sedang dalam kondisi gabut parah karena situs ini hanya berisi hal yang tidak berguna.namun bukan berarti ini berlaku ke semuanya berikut tata caranya ; </p>
+  <ol class="po"> jika antum unging merubah ini ke morse maka
+    <li>ketuk input pada situs ini(input yang pertama).</li>
+    <li>masukkan teks yang ingin antum rubah.<strong>jangan sampai ada huruf kapitalnya kerena tidak ada discripnya</strong></li>
+    <li>setelah yakin teks yang anda tulis maka tekan morse disamping input <strong>pertama</strong></li>
+    <li>dan tingal antum copy tekan meneka lama morsenya dan cari opsi pilih semua dan pilih copy.</li>
+  </ol>
+  <br />
+  <ol>sama juga dengan merubahnya kembali ke huruf biasa
+  <li>antum hanya perlu ikuti lankah 1-3.<strong>bedanya anda masukkan teks  morse.</strong></li>
+   <li>lalu ikuri langkah ke-4 yang tadi</li>
+  </ol>
+  <br /><br /><br /><br />
+  <h6 align="center">sampai jumpa .walaikumsalam wr.wb</h6>
+    <script type="text/javascript" charset="utf-8">
+    function submitdata(){
+    let aa = document.getElementById("text").value;
+    let kk = aa.replaceAll(" ","  ")
+    let a = kk.replaceAll("a"," •- ");
+    let b = a.replaceAll("b"," -••• ");
+    let c = b.replaceAll("c"," -•-• ");
+    let d = c.replaceAll("d"," -•• ");
+    let e = d.replaceAll("e"," • ");
+    let f = e.replaceAll("f"," ••-• ");
+    let g = f.replaceAll("g"," --• ");
+    let h = g.replaceAll("h"," •••• ");
+    let i = h.replaceAll("i"," •• ");
+    let j = i.replaceAll("j"," •--- ");
+    let k = j.replaceAll("k"," -•- ");
+    let l = k.replaceAll("l"," •-•• ");
+    let m = l.replaceAll("m"," -- ");
+    let n = m.replaceAll("n"," -• ");
+    let o = n.replaceAll("o"," --- ");
+    let p = o.replaceAll("p"," •--• ");
+    let q = p.replaceAll("q"," --•- ");
+    let r = q.replaceAll("r"," •-• ");
+    let s = r.replaceAll("s"," ••• ");
+    let t = s.replaceAll("t"," - ");
+    let u = t.replaceAll("u"," ••- ");
+    let v = u.replaceAll("v"," •••- ");
+    let w = v.replaceAll("w"," •-- ");
+    let x = w.replaceAll("x"," -••- ");
+    let y = x.replaceAll("y"," -•-- ");
+    let z = y.replaceAll("z"," --•• ");
+    let aa1 = z.replaceAll("1"," •---- ");
+    let aa2 = aa1.replaceAll("0"," ----- ");
+    let aa3 = aa2.replaceAll("9"," ----• ");
+    let aa4 = aa3.replaceAll("2"," ••--- ");
+    let aa5 = aa4.replaceAll("8"," ---•• ");
+    let aa6 = aa5.replaceAll("3"," •••-- ");
+    let aa7 = aa5.replaceAll("7"," --••• ");
+    let aa8 = aa7.replaceAll("4"," ••••- ");
+    let aa9 = aa8.replaceAll("5"," ••••• ");
+    let aa10 = aa9.replaceAll("6"," -•••• ");
+    document.writeln(`<p> ${aa10} </p>`);
+    }
+    function submitdata2(){
+      let a1 = document.getElementById("me").value;
+    let aa1 = a1.replaceAll("•----","1");
+    let aa2 = aa1.replaceAll("-----","0");
+    let aa3 = aa2.replaceAll("----•","9");
+    let aa4 = aa3.replaceAll("••---","2");
+    let aa5 = aa4.replaceAll("---••","8");
+    let aa6 = aa5.replaceAll("•••--","3");
+    let aa7 = aa5.replaceAll("--•••","7");
+    let aa8 = aa7.replaceAll("••••-","4");
+    let aa9 = aa8.replaceAll("•••••","5");
+    let aa10 = aa9.replaceAll("-••••","6");
+    let ad= aa10.replaceAll("-•-•","c");
+    let ah= ad.replaceAll("••-•","f"); 
+    let al= ah.replaceAll("••••","h");
+    let an= al.replaceAll("•---","j");
+    let ap= an.replaceAll("•-••","l");
+    let at= ap.replaceAll("•--•","p");
+    let au= at.replaceAll("--•-","q");
+    let az= au.replaceAll("•••-","v");
+    let bb= az.replaceAll("-••-","x");
+    let bc= bb.replaceAll("-•--","y");
+    let bd= bc.replaceAll("--••","z");
+    let av= bd.replaceAll("•-•","r");
+    let ba= av.replaceAll("•--","w");
+    let ay= ba.replaceAll("••-","u");
+    let aw= ay.replaceAll("•••","s");
+    let as= aw.replaceAll("---","o");
+    let ao= as.replaceAll("-•-","k");
+    let ak= ao.replaceAll("•--","g");
+    let ae= ak.replaceAll("-••","d");
+    let aq= ae.replaceAll("--","m");
+    let am= aq.replaceAll("••","i");
+    let ar= am.replaceAll("-•","n");
+    let ab= ar.replaceAll("•-","a");
+    let ax= ab.replaceAll("-","t");
+    let ag= ax.replaceAll(" • ","e");
+    document.writeln(aa10);
+    }
+    </script>
+  </body>
+</html>
